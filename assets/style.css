@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +56,11 @@ body {
     
 }
 
+.content a:hover {
+    border-radius: 10%;
+    color: black;
+}
+
 
 /* Grid de la sección principal. */
 .main {
@@ -63,7 +69,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 4fr);
     grid-column-gap: 5%;
     grid-row-gap: 1%;
     
@@ -73,10 +79,9 @@ body {
 
 /* Grid del primer section */
 .contenido {
-    grid-column: 1/4;
-    grid-row: 1;
+    grid-column: 1/5;
+    grid-row: 1 / 1;
     justify-content: center;
-    
     text-align: center;
 }
 
@@ -84,44 +89,36 @@ body {
     background-color: brown;
     width: 100%;
     color: white;
+    text-align: center;
 }
 
-.contenido img {
-    width: 50%;
+ .imgMayor {
+    width: 70%;
     height: auto;
-    max-width: 100%;
+    margin-top: 2%;
+    
 }
 
 
 /* Responsive del contenido principal*/
-@media screen and (max-width: 600px) {
-    .main .contenido  {
-        grid-column: 1 / span 3;
-    }
-    
-}
-
-@media screen and (max-width: 800px) {
-    .main{
-        width: 100%;
+@media screen and (min-width: 600px) {
+    .main .contenido .imgMayor{
+        max-width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .main .contenido {
-        height: 200px;
-    }
 }
 
 
 
 /* Grid del segundo section  */
 .sectionSecundary {
-    grid-column: 3/4;
+    grid-column: 1/5;
     grid-row: 2;
     height: 70%;
     width: 90%;
     padding-left: 1%;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     margin-left: 5%;
 }
 
@@ -136,48 +133,23 @@ body {
     text-align: center;
 }
 
-.imgOne {
+.imgMain {
     width: 30%;
     height: auto;
     max-width: 100%;
     padding:  2rem;
 }
 
-.imgTwo {
-    width: 30%;
-    height: auto;
-    max-width: 100%;
-    padding: 2rem;
-}
-
-.imgThree {
-    width: 30%;
-    height: auto;
-    max-width: 100%;
-   padding: 2rem;
-    
-}
 /* Responsive de section de la página principal*/
-@media screen and (max-width: 600px) {
-    .sectionSecundary .imgOne .imgTwo .imgThree  {
-        grid-column: 1 / span 3;
-    }
-    
-}
-
-@media screen and (max-width: 800px) {
-    .sectionSecundary{
-        width: 90%;
+@media screen and (min-width: 600px) {
+    .sectionSecundary .imgMain h2 {
+        max-width: 100%;
         grid-template-columns: repeat(1, 1fr);
-    }
+        margin-left: 20%;
+        
 
-    .sectionSecundary .imgOne .imgTwo .imgThree {
-        height: 200px;
     }
 }
-
-
-
 
 /* Sección de galeria*/
 .galerySection {
@@ -216,13 +188,13 @@ body {
 .galerySection .boxImg:nth-child(4){
     grid-row-start: span 2;
 }
-
-@media screen and (min-width: 800px){
+/* Diseño responsivo de la sección galeria */
+@media screen and (min-width: 600px){
     .galerySection{
-        width: 95%;
+        max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        grid-template-rows: 200px;
+        grid-gap: 2px;
+        grid-template-rows: 20%;
     }
 
     .galerySection .boxImg:nth-child(1) {
@@ -236,35 +208,14 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
-    .main .contenido .sectionSecundary {
-        grid-column: 1 / span 3;
-    }
-    
-}
-
-
-
-
-/* Diseño responsivo de la página galeria */
-@media screen and (max-width: 800px) {
-    .galerySection{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .galerySection .boxImg {
-        height: 200px;
-    }
-}
 
 /* Página de producto */
 .card {
     max-width: 200px;
     display: flex;
-    flex-flow: row-reverse wrap;
-    margin-bottom: 10%;
-    margin-left: 2%;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+    margin-left: 5%;
     border-radius: 6px;
     box-shadow: 0 0 0.1em rgb(0, 0, 0.2);
     background-color: rgb(255, 255, 255); 
@@ -300,9 +251,8 @@ body {
 /* Sección de servicios */
 .services {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2px;
-    grid-auto-rows: 2%;
     grid-auto-flow: row dense;
 }
 
