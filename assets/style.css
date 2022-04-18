@@ -37,6 +37,19 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+
+    animation-name: img;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes img {
+    0% {background: black;}
+    50% {background: white;}
+    100% {background: brown;}
+
 }
 
 .enlace img:hover {
@@ -99,7 +112,6 @@ body {
     
 }
 
-
 /* Responsive del contenido principal*/
 @media screen and (min-width: 600px) {
     .main .contenido .imgMayor{
@@ -143,16 +155,9 @@ body {
 /* Responsive de section de la página principal*/
 @media screen and (min-width: 600px) {
     .sectionSecundary .imgMain h2 {
-        max-width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: 20%;
-        
-
-    }
-}
-
-/* Sección de galeria*/
-.galerySection {
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20%;
     width: 60%;
     max-width: 1000px;
     margin: auto;
@@ -356,11 +361,3 @@ body {
     color: black;
     
 }
-
-
-
-
-
-
-
-
