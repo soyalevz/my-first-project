@@ -5,110 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./../img/camera-svgrepo-com.svg" />
-    <link rel="stylesheet" href="../style.css" />
+    <link href="./../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/main.css" />
     <title>Raw</title>
   </head>
   <body>
-    <header class="container">
-      <a class="enlace" href="../../index.html">
-        <img src="../img/camera-svgrepo-com.svg" alt="logo" />
+    <header class="navbar navbar-expand-sm navbar-dark bg-danger">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./../img/camera-svgrepo-com.svg" alt="logo" width="30"/>
       </a>
-      <nav class="content">
-        <a class="item" href="../../index.html">Inicio</a>
-        <a class="item" href="productos.html">Productos</a>
-        <a class="item" href="galeria.html">Galeria</a>
-        <a class="item" href="servicios.html">Servicios</a>
-        <a class="item" href="contacto.html">Contacto</a>
+
+      <button class="navbar-toggler"
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toogle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="./../../index.html"> Inicio </a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html"> Productos </a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.html"> Galeria </a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html"> Servicios </a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html"> Contacto </a></li>
+        </ul>
       </nav>
+    </div>
     </header>
 
-    <section>
-      <div class="card">
-        <img class="logo2" src="../img/logo-canon-red.svg" alt="logo_canon" />
+    <section class="row row-cols-1 row-cols-md-3 g-4 p-5">
+      <div class="col">
+        <div class="card h-100">
+          <img class="logo2" src="../img/logo-canon-red.svg" alt="logo_canon" />
+          <img src="../img/producto-1.jpg" class="card-img-top" alt="camara-canon">
+          <div class="card-body">
+            <h5 class="card-title text-center">Eos 90D</h5>
+            <p class="card-text">Rápida. Versátil. Impresionante. La cámara EOS 90D está diseñada
+              para ofrecer resultados impresionantes, ya sea que este capturando
+              eventos deportivos de alta velocidad o simples momentos cotidianos.</p>
+              <a href="#" class="cardButton">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img class="logo2" src="../img/logoSony.png" alt="logo__sony" />
+          <img src="../img/camaraSony.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sony Alpha 7</h5>
+            <p class="card-text"> Cuerpo ILC full-frame Alpha 7 II con lente de zoom estándar. La a7
+              II es la primera cámara de fotograma completo en el mundo1Se
+              encuentra entre las cámaras digitales con lentes intercambiables que
+              cuentan con un sensor de imágenes de fotograma completo de 35 mm</p>
+              <a href="#" class="cardButton"> Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/logoSony.png" alt="logo__sony" />
+          <img src="../img/lenteSony.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FE 50mm F1.2 GM</h5>
+            <p class="card-text"><strong>Montura tipo E con formato Full Frame, Lente estándar G Master F1,2
+              de gran apertura, Compacto pero con la increíble velocidad,
+              resolución y bokeh de G Master</p>
+              <a href="#" class="cardButton"> Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/logo-canon-red.svg"alt="logo__canon" />
+          <img src="../img/lenteCanon.jpg" class="card-img-top" alt="lente-de-camara-canon">
+          <div class="card-body">
+            <h5 class="card-title">EF-S 18-55mm f/3.5-5.6 IS II</h5>
+            <p class="card-text">Captura los mejores momentos.</p>
 
-        <img src="../img/producto-1.jpg" alt="camara_canon" />
-
-        <div>
-          <strong class="cardPrice"> $1.199.989 </strong>
-
-          <p class="cardText">
-            Rápida. Versátil. Impresionante. La cámara EOS 90D está diseñada
-            para ofrecer resultados impresionantes, ya sea que este capturando
-            eventos deportivos de alta velocidad o simples momentos cotidianos.
-          </p>
-
-          <a href="#" class="cardButton">Comprar</a>
+            <a href="#" class="cardButton"> Comprar</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="card">
-        <img class="logo2" src="../img/logoSony.png" alt="logo__sony" />
+    
 
-        <img src="../img/camaraSony.png" alt="camara__sony" />
 
-        <div>
-          <strong class="cardPrice"> $1,299,990 </strong>
+   
 
-          <p class="cardText">
-            Cuerpo ILC full-frame Alpha 7 II con lente de zoom estándar. La a7
-            II es la primera cámara de fotograma completo en el mundo1Se
-            encuentra entre las cámaras digitales con lentes intercambiables que
-            cuentan con un sensor de imágenes de fotograma completo de 35 mm
-          </p>
+   
 
-          <a href="#" class="cardButton"> Comprar</a>
+    <footer id="footer" class="p-5">
+      <div class="container w-50 pt-5">
+        <div class="row justify-content-md-center">
+          <div class="col text-center">
+            <a href="https://www.instagram.com/soyalevz/" target="_blank">
+              <button class="btn btn-lg rounded-pill btn-danger w-10 p3 shadow-sm font-weight-bold">Contactanos</button>
+            </a>
+ 
+          </div>
+ 
         </div>
       </div>
-    </section>
+ 
+       
+     </footer>
 
-    <section>
-      <div class="card">
-        <img class="logo2" src="../img/logo-canon-red.svg" alt="logo_canon" />
-
-        <img src="../img/lenteCanon.jpg" alt="camara_canon" />
-
-        <div class="cardPrice">
-          <strong> $199.989 </strong>
-
-          <p class="cardProduct__text">
-            <strong>EF-S 18-55mm f/3.5-5.6 IS II</strong> <br />
-            perfecto para capturar tus mejores momentos.
-          </p>
-
-          <a href="#" class="cardButton">Comprar</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <img src="../img/logoSony.png" alt="logo__sony" />
-
-        <img src="../img/lenteSony.png" alt="camara__sony" />
-
-        <div class="cardPrice">
-          <strong> 1.769.991 </strong>
-
-          <p class="cardText">
-            <strong>FE 50mm F1.2 GM </strong> <br />
-            Montura tipo E con formato Full Frame, Lente estándar G Master F1,2
-            de gran apertura, Compacto pero con la increíble velocidad,
-            resolución y bokeh de G Master
-          </p>
-
-          <a href="#" class="cardButton">Comprar</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p><small>Siguenos en nuestras redes sociales: </small></p>
-
-      <a href="https://www.instagram.com/soyalevz/?hl=es" target="_black"
-        ><img src="../img/logo-instagram-svgrepo-com.svg" alt="instagram" />
-      </a>
-    </footer>
+    <script src="./../js/bootstrap.bundle.min.js"> </script> 
+    <script src="./../js/popper.min.js"></script>
   </body>
 </html>

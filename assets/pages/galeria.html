@@ -5,97 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./../img/camera-svgrepo-com.svg" />
-    <link rel="stylesheet" href="../style.css" />
+    <link href="./../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../css/main.css" />
     <title>Raw</title>
   </head>
   <body>
-    <header class="container">
-      <a class="enlace" href="../../index.html">
-        <img src="../img/camera-svgrepo-com.svg" alt="logo" />
-      </a>
-      <nav class="content">
-        <a class="item" href="../../index.html">Inicio</a>
-        <a class="item" href="productos.html">Productos</a>
-        <a class="item" href="galeria.html">Galeria</a>
-        <a class="item" href="servicios.html">Servicios</a>
-        <a class="item" href="contacto.html">Contacto</a>
-      </nav>
+    <header class="navbar navbar-expand-sm navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./../../index.html">
+          <img src="./../img/camera-svgrepo-com.svg" alt="logo" width="30" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toogle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./../../index.html"> Inicio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html"> Productos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html"> Galeria </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html"> Servicios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"> Contacto </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main class="galeryMain">
-      <h2>El arte está en todo</h2>
-      <hr />
-    </main>
-
-    <section class="galerySection">
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img
-              src="../img/musico.jpg
-              "
-              alt=""
-            />
-          </figure>
-        </a>
+    <section id="galeria" class="container">
+      <div class="text-center pt-5">
+        <h2>Galeria</h2>
       </div>
 
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img src="../img/gato.jpg" alt="" />
-            <img src="../img/japon.jpg" alt="" />
-          </figure>
-        </a>
-      </div>
-
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img src="../img/bangok.jpg" alt="" />
-          </figure>
-        </a>
-      </div>
-
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img src="../img/estilista.jpg" alt="" />
-          </figure>
-        </a>
-      </div>
-
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img src="../img/callejon.jpg" alt="" />
-          </figure>
-        </a>
-      </div>
-
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img src="../img/ropa.jpg" alt="" />
-          </figure>
-        </a>
-      </div>
-
-      <div class="boxImg">
-        <a href="#">
-          <figure>
-            <img src="../img/gato_perro.jpg" alt="" />
-          </figure>
-        </a>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="../img/gato_perro.jpg" alt="gato-y-perro" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="../img/mujer_fumando.jpg" alt="mujer-fumando" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="../img/bangok.jpg" alt="comida-de-bangok" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="../img/gato.jpg" alt="gato" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="../img/musico.jpg" alt="musico" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img src="../img/cafe.jpg" alt="cafeteria" />
+        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <p><small>Siguenos en nuestras redes sociales: </small></p>
-
-      <a href="https://www.instagram.com/soyalevz/?hl=es" target="_black"
-        ><img src="../img/logo-instagram-svgrepo-com.svg" alt="instagram" />
-      </a>
+    <footer id="footer" class="p-5">
+      <div class="container w-50 pt-5">
+        <div class="row justify-content-md-center">
+          <div class="col text-center">
+            <a href="https://www.instagram.com/soyalevz/" target="_blank">
+              <button
+                class="btn btn-lg rounded-pill btn-danger w-10 p3 shadow-sm font-weight-bold"
+              >
+                Contactanos
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <script src="./../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
