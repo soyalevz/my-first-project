@@ -1,0 +1,38 @@
+/* Sección de contacto*/
+
+@media screen and (max-width:600px){
+    .row {
+    margin-right: 6%;
+    }
+
+    .title-formulario {
+    color: brown;
+    text-align: center;
+    padding-left: 30%;
+    }
+
+    .bigicon {
+        font-size: 20px;
+        color: brown;
+    }
+}
+
+.title-formulario {
+    color: brown;
+    text-align: center;
+    padding-right: 30%;
+   
+}
+
+.bigicon {
+    font-size: 30px;
+    color: brown;
+}
+
+.formulario {
+    padding-left: 25%; 
+  
+    .btn {
+      margin-right: 30%;
+    }
+} 
