@@ -17,9 +17,15 @@
   font-weight: 500;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: oblique;
-  color: brown; }
-  .lrycsTitle:hover {
-    background-color: gray; }
+  color: #c91f1f;
+  text-align: center; }
+
+.lrycsMedium {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #cb2424; }
 
 .lyricsSmall {
   font-size: 1rem;

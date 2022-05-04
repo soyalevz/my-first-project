@@ -10,12 +10,15 @@
     @include fontSize(2rem,500);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
-    color: brown;
+    color: rgb(201, 31, 31);
+    text-align: center;
+}
 
-    &:hover {
-       background-color: gray;
-
-    }
+.lrycsMedium {
+    @include fontSize( 1.5rem, 300 );
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(203, 36, 36);
 }
 
 .lyricsSmall {
