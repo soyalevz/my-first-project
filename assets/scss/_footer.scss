@@ -1,0 +1,69 @@
+/* Sección de footer */
+
+$redes: (
+    instagram: #dc2b4e,
+    facebook:  #3b5999,
+    twitter:   #55acee,
+    tiktok:    #f0153d,
+);
+
+.footer {
+    background: url(./../img/índice.png);
+    background-color: cadetblue;
+    background-size: 50px 50px;
+}
+
+.redes-container {
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+
+    
+    ul li {
+        display: inline;
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    ul li a {
+        display: inline-block;
+        padding: 0 10px;
+        background: #fff;
+        color: #fff;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+        transition: .25;
+    }
+
+    ul:hover a {
+        filter: blur(2px);
+    }
+    
+    ul li a:hover {
+        transform: translateY(-3) scale(1.05);
+        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+        filter: none;
+    }
+
+    ul li .instagram:hover {
+        background: map-get($map: $redes , $key: instagram );
+    }
+
+    ul li .twitter:hover {
+        background: map-get($map: $redes, $key:twitter );
+    }
+
+    ul li .facebook:hover {
+        background: map-get($map: $redes, $key:facebook );
+    }
+
+    ul li .tiktok:hover {
+        background: map-get($map: $redes, $key:tiktok );
+    }
+    
+    
+}

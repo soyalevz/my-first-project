@@ -6,107 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/camera-svgrepo-com.svg" />
     <link href="./assets/css/bootstrap.min.css"  rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/main.css"/> 
+    <link rel="stylesheet" href="./assets/css/style.css"/> 
     <title>Raw</title>
   </head>
+
   <body>
-    <header class="navbar navbar-expand-sm navbar-dark bg-danger">
+    <!--Navbar-->
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
       <div class="container-fluid">
-        <a class="navbar-brand " href="./index.html">
-          <img src="./assets/img/camera-svgrepo-com.svg" alt="logo" width="30" />
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/camera-svgrepo-com.svg" width="60px" alt="logo">
         </a>
-  
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
-  
-          <span class="navbar-toggler-icon"></span>
+
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toogle navigation">
+
+          <span class="navbar-toggler-icon"> </span>
         </button>
-  
-        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html"> Inicio </a></li>
-            <li class="nav-item"><a class="nav-link" href="assets/pages/productos.html"> Productos </a></li>
-            <li class="nav-item"><a class="nav-link" href="assets/pages/galeria.html"> Galeria </a></li>
-            <li class="nav-item"><a class="nav-link" href="assets/pages/servicios.html"> Servicios </a></li>
-            <li class="nav-item"><a class="nav-link" href="assets/pages/contacto.html"> Contacto </a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="/assets/pages/productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./assets/pages/galeria.html">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="/assets/pages/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="/assets/pages/contacto.html">Contacto</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-  
+    </nav>
+  </header>
+    <!--carrousel-->
     <main class="carousel slide" id="mainSlider" data-ride="carousel">
-      <h1 class="text-center">Encontramos arte en todo</h1>
-      <section class="carousel-inner">
-        <div class="carousel-item active">
+      <section class="carousel-inner data-bs-interval ">
+        <div class="carousel-item active data-bs-interval ">
           <img src="assets/img/slide.jpg" alt="" class="d-block w-100">
         </div>
   
-        <div class="carousel-item ">
+        <div class="carousel-item data-bs-interval  ">
           <img src="assets/img/slide02.jpg" alt="" class="d-block w-100">
   
         </div>
   
-        <div class="carousel-item ">
+        <div class="carousel-item data-bs-interval  ">
           <img src="assets/img/slide03.jpg" alt="" class="d-block w-100">
-  
         </div>
       </section>
     </main>
-  
-    <article class="col-sm p-3 text-dark text-center">
-      <h2>Inspirate</h2>
-      <p>Empieza ya mismo</p>
-    </article>
-  
-    <section class="card-group">
-      <div class="card">
-        <img src="assets/img/callejon.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Simple</h5>
-          <p class="card-text">Mantente simple y disfruta cada momento de tu vida.</p>
-        </div>
+
+    <section id="ribbon" class="container-fluid">
+      <article id="parrafo" class="container w50 pl-5 rounded-lg">
+      <div class="row aling-items-center">
+        <img src="assets/img/obturador.svg" class=" mx-auto d-block imgP" alt="">
       </div>
-      <div class="card">
-        <img src="assets/img/estilista.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cotidiano</h5>
-          <p class="card-text">Sé observador y encuentra la inspiración en lo que amas.</p>
-        </div>
+
+      <div class="col-sm p-3 text-black text-center">
+        <p>Todos podemos capturar momentos maravillosos</p>
       </div>
-      <div class="card">
-        <img src="assets/img/hombres.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Amigos</h5>
-          <p class="card-text">Disfruta siempre con las personas que amas.</p>
-        </div>
-      </div>
+      </article>
     </section>
-  
-  
-  
-    <footer id="footer" class="p-5">
-      <div class="container w-50 pt-5">
-        <div class="row justify-content-md-center">
-          <div class="col text-center">
-            <a href="https://www.instagram.com/soyalevz/" target="_blank">
-              <button class="btn btn-lg rounded-pill btn-danger w-10 p3 shadow-sm font-weight-bold">Contactanos</button>
-            </a>
+
+    <article class="separator-ribbon">
+      <div class="content bg-danger">
+      </div>
+    </article>
+
+    <section class="target">
+      <article class="container-md p-5">
+        <div class="row pt-5">
+         <h1 class="text-center pb-5 pt-5">Buscamos arte en lo cotidiano</h1>
+        </div>
+         
+        <div class="row">
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+              <img class="image" src="assets/img/perro-gato.png" alt="">
+              <div class="card-body">
+                <h2 class="card-title ">Cotidiano</h2>
+                  <p class="cardText">
+                    Cualquier momento es bueno para capturar y más cuando amamos a sus protagonistas.
+                  </p>
+                
+              </div>
+            </div>
           </div>
-  
-          <div class="redes-container">
-            <ul>
-              <li> <a href="#" class="instagram"> <img src="assets/img/bxl-instagram-alt.svg" alt="instagram"> <i
-                    class="fab fa-intagram"></i></a></li>
-              <li><a href="#" class="twitter"> <img src="assets/img/bxl-twitter.svg" alt="twitter"> <i
-                    class="fab fa-twitter"></i></a></li>
-              <li><a href="#" class="facebook"> <img src="assets/img/bxl-facebook.svg" alt="fa-facebook"> <i
-                    class="fab fa-facebook"></i></a></li>
-              <li><a href="#" class="tiktok"> <img src="assets/img/bxl-tiktok.svg" alt="tiktok"> <i
-                    class="fab fa-tiktok"></i></a></li>
-            </ul>
+
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+              <img class="image" src="assets/img/callejon.png" alt="">
+              <div class="card-body">
+                <h2 class="card-title ">Calles</h2>
+                  <p class="cardText">En las calles existe arte y podemos capturarlo todos.</p>
+                
+              </div>
+            </div>
           </div>
-  
-    </footer>
+
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+              <img class="image" src="assets/img/Estilista.png" alt="">
+              <div class="card-body">
+                <h2 class="card-title ">Trabajo</h2>
+                  <p class="cardText">Podemos hacer lo que amamos y capturarlo para siempre </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+  <footer class="footer">
+    <div class="redes-container">
+      <ul>
+        <li> <a href="#" class="instagram"> <img src="assets/img/bxl-instagram-alt.svg" alt="logo-de-instagram"> <i
+              class="fab fa-intagram "></i></a></li>
+        <li><a href="#" class="twitter"> <img src="assets/img/bxl-twitter.svg" alt="logo-de-twitter"> <i
+              class="fab fa-twitter"></i></a></li>
+
+        <li><a href="#" class="facebook"> <img src="assets/img/bxl-facebook.svg" alt="logo-de-facebook"> <i class="fab fa-facebook"></i></a></li>
+
+        <li><a href="#" class="tiktok"> <img src="assets/img/bxl-tiktok.svg" alt="logo-de-tiktok"> <i
+              class="fab fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+  </footer>
   
   
   
