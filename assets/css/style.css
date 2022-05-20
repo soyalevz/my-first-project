@@ -135,8 +135,9 @@ body {
   width: 100%;
   height: 250px; }
   .contacto img:hover {
-    border: 5px solid #bf4141;
-    size: 100%; }
+    border: 5px solid #df3737;
+    size: 100%;
+    opacity: 3; }
 
 .formulario {
   width: 300px;
@@ -154,24 +155,30 @@ body {
   .formulario input[type="email"] {
     width: 180px;
     padding: 3px 10px;
-    border: 1px solid #fbf0f0;
+    border: 1px solid #090000;
     border-radius: 3px;
     background-color: white;
     margin: 8px 0;
     display: inline-block; }
   .formulario #miArchivo {
     color: transparent; }
-  .formulario button {
+  .formulario .buttonC {
     width: 100%;
+    cursor: pointer;
     padding: 8px 16px;
     margin-top: 32px;
     border: 1px solid #060606;
     border-radius: 5px;
     display: block;
-    color: #0f0f0f;
-    background-color: #e6e1e1; }
-    .formulario button button:hover {
-      cursor: pointer; }
+    color: black;
+    background-image: linear-gradient(to right, #e61c1c 50%, white 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: background-position .3s ease; }
+    .formulario .buttonC:hover {
+      background-position: left;
+      color: white; }
 
 /* Sección de footer */
 .footer {

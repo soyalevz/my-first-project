@@ -16,8 +16,9 @@
         height: 250px;
 
         &:hover {
-           border: 5px solid #bf4141;
+           border: 5px solid #df3737;
            size: 100%;
+           opacity: 3;
         }
     } 
 }
@@ -41,7 +42,7 @@
    & input[type="email"] {
        width: 180px;
        padding: 3px 10px;
-       border: 1px solid rgb(251, 240, 240);
+       border: 1px solid rgb(9, 0, 0);
        border-radius: 3px;
        background-color: rgb(255, 255, 255);
        margin: 8px 0;
@@ -53,18 +54,27 @@
        color: transparent;
    }
 
-   & button {
+   .buttonC {
        width: 100%;
+       cursor: pointer;
        padding: 8px 16px;
        margin-top: 32px;
        border: 1px solid rgb(6, 6, 6);
        border-radius: 5px;
        display: block;
-       color: rgb(15, 15, 15);
-       background-color: rgb(230, 225, 225);
+       color: black;
+       
+       background-image: linear-gradient(to right, rgb(230, 28, 28) 50%, white 50%);
+       background-size: 200%;
+       background-repeat: no-repeat;
+       background-position: right;
+       transition: background-position .3s ease; 
+    
+       &:hover {
+        background-position: left;
+        color: white;
+    }
+    
+}  
 
-       & button:hover {
-           cursor: pointer;
-       }
-   }
 }
