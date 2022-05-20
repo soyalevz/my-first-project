@@ -62,19 +62,14 @@ body {
       background-color: brown; }
 
 /*Sección galeria */
-.servicesTwo {
-  text-align: center; }
-  .servicesTwo li {
-    list-style: none; }
-
-#galeria .col-lg-4 {
+.galeria .col-lg-4 {
   margin: 0;
   padding: 25px; }
 
-#galeria img {
+.galeria img {
   width: 100%;
   height: 250px; }
-  #galeria img:hover {
+  .galeria img:hover {
     border: 5px solid #bf4141;
     size: 100%; }
 
@@ -82,36 +77,33 @@ body {
 .logo {
   width: 30%;
   margin-left: 40%;
-  padding: 5%; }
+  padding: 2%; }
 
 .card-img-top {
   width: 45%;
   margin-left: 30%; }
 
 .card-title {
-  text-align: center; }
+  font-size: 16px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
 
 .card-text {
   text-align: justify;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 7%; }
 
-.card-body a {
+.cardButton {
   text-decoration: none;
-  list-style: none;
-  color: white;
-  border: medium solid brown;
-  background-color: brown;
-  margin-left: 40%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
-  .card-body a:hover {
-    border-radius: 10%;
-    background-color: gray;
-    color: black; }
-  .card-body a:hover {
-    fill-opacity: 30%;
-    background-color: gray;
-    font-size: 20px; }
+  position: absolute;
+  bottom: 1px;
+  margin-left: 35%;
+  text-align: center;
+  color: brown; }
+  .cardButton:hover {
+    color: gray; }
 
 /* Sección de servicios */
 .servicesTwo {
@@ -119,16 +111,67 @@ body {
   .servicesTwo li {
     list-style: none; }
 
-#servicios .col-lg-4 {
+.servicios .col-lg-4 {
   margin: 0;
   padding: 25px; }
 
-#servicios img {
+.servicios img {
   width: 100%;
   height: 250px; }
-  #servicios img:hover {
+  .servicios img:hover {
     border: 5px solid #bf4141;
     size: 100%; }
+
+/* Sección contacto */
+.title-contacto {
+  text-align: center;
+  margin: 2%; }
+
+.contacto .col-lg-4 {
+  margin: 0;
+  padding: 25px; }
+
+.contacto img {
+  width: 100%;
+  height: 250px; }
+  .contacto img:hover {
+    border: 5px solid #bf4141;
+    size: 100%; }
+
+.formulario {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #fb2e2e; }
+  .formulario label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+    color: #050505;
+    font-family: Arial, Helvetica, sans-serif; }
+  .formulario input[type="text"],
+  .formulario input[type="email"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #fbf0f0;
+    border-radius: 3px;
+    background-color: white;
+    margin: 8px 0;
+    display: inline-block; }
+  .formulario #miArchivo {
+    color: transparent; }
+  .formulario button {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #060606;
+    border-radius: 5px;
+    display: block;
+    color: #0f0f0f;
+    background-color: #e6e1e1; }
+    .formulario button button:hover {
+      cursor: pointer; }
 
 /* Sección de footer */
 .footer {

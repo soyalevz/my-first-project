@@ -3,7 +3,7 @@
 .logo {
     width: 30%;
     margin-left: 40%;
-    padding: 5%;
+    padding: 2%;
 }
 
 .card-img-top {
@@ -12,34 +12,30 @@
 }
 
 .card-title {
+    font-size: 16px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .card-text {
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 7%;
 }
 
-.card-body a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    border: medium solid brown;
-    background-color: brown;
-    margin-left: 40%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-    &:hover {
-        border-radius: 10%;
-        background-color: gray;
-        color: black;
-        
-    }
+.cardButton{
+ text-decoration: none;
+ position: absolute;
+ bottom: 1px;
+ margin-left: 35%;
+ text-align: center;
 
-    &:hover {
-        fill-opacity: (30%);
-        background-color: gray;
-        font-size: 20px;
-    }
+ color: brown;
+ 
+
+ &:hover {
+     color: gray;
+ }
 }
