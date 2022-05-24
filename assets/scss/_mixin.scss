@@ -1,0 +1,31 @@
+
+@mixin fontSize($size, $weight, $color, $font, $aling) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    font-family: $font;
+    text-align: $aling;
+    
+}
+
+.letterMenu {
+    @include fontSize(2rem, 60, gray, impact, center);
+}
+
+.paragraph {
+    @include fontSize(2.5rem,16,black, impact, center);
+}
+
+.titleMain {
+    @include fontSize(3rem,50 , rgb(232, 30, 30), impact, center);
+    
+}
+
+.cardTitle {
+    @include fontSize(2rem, 25, gray, impact, center);
+}
+
+.cardText {
+    @include fontSize(1.5rem,16,black,arial,justify);
+}
+

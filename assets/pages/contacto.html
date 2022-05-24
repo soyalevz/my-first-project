@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dc2b4e">
+    <meta name="keywords" content="raw, fotografia, aprender fotografía con celular, fotografia cotidiana">
+    <meta name="description" content="raw somos una pagina para personas apasionadas por la fotografia que quieran capturar cualquier momento en la vida y volverlo una pieza de arte, todos somos fotografos que atesoramos recuerdos">
     <link rel="icon" href="./../img/camera-svgrepo-com.svg" />
     <link href="./../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./../css/style.css" />
@@ -29,7 +32,7 @@
           </button>
   
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto letterMenu">
               <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
               <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
               <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
@@ -44,7 +47,7 @@
     
     
     <section  class="contacto container">
-      <h2 class="title-contacto">Envíanos tus momentos</h2>
+      <h2 class="titleMain pt-5">Envíanos tus momentos</h2>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <img src="../img/contacto1.jpg" alt="gato-y-perro" />
@@ -58,13 +61,13 @@
     </section>
 
     <article>
-      <form class="formulario" action="get">
+      <form class="formulario cardText" action="get">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Escribe tu nombre">
-        <label for="email">Email:</label>
-        <input type="email" name="email" placeholder="Escribe tu email">
+        <input type="text" name="nombre" required placeholder="Escribe tu nombre">
+        <label for="email" >Email:</label>
+        <input type="email" name="email" required placeholder="Escribe tu email">
         <label for="file">Subir:</label>
-        <input type="file" id="miArchivo">
+        <input type="file" required id="miArchivo">
         <button class="buttonC">Enviar</button>
       </form>
       <hr>
